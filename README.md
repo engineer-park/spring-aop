@@ -29,4 +29,4 @@ AOP관련 의존성은 다음과 같습니다.<br>
   - Aspectjrt : AspectJ라고 하는 AOP프레임워크를 제공하는 라이브러리.<br>
   - Aspectj Weaver : AspectJ를 활용하기위한 기능을 제공하는 라이브러리.<br>
 <br>
- 이 세개는 Spring에서 활용하는 경우, 세트로 생각해 주시면 됩니다. AspectJ는 Spring Framework가 아니고 Xerox Palo Alto연구소에서 개발되어 지고 있고, 현재는 Eclipse Foundation의 프로젝트로서 개발이 진행되어지고 있는 오픈소스 프레임워크 입니다. 이 AspectJ가 AOP의 구현체라고 보시면 됩니다. 그래서 Spring AOP뿐만 아니라 자바에서의 AOP관련 프레임워크나 라이브러리는 대부분의 것이 AspectJ를 사용하고 있습니다. 즉, 기본적인 Spring AOP의 사용방법으로서 학습을 하지만 그 베이스에는 AspectJ라는 것이 사용되어 지는구나 라고 생각해주시면 되겠습니다.
+ 이 세개는 Spring에서 활용하는 경우, 세트로 생각해 주시면 됩니다. AspectJ는 Spring Framework가 아니고 Xerox Palo Alto연구소에서 개발되어 지고 있고, 현재는 Eclipse Foundation의 프로젝트로서 개발이 진행되어지고 있는 오픈소스 프레임워크 입니다. 이 AspectJ가 AOP의 구현체라고 보시면 됩니다. 그래서 Spring AOP뿐만 아니라 자바에서의 AOP관련 프레임워크나 라이브러리는 대부분의 것이 AspectJ를 사용하고 있습니다. 즉, 기본적인 Spring AOP의 사용방법으로서 학습을 하지만 그 베이스에는 AspectJ라는 것이 사용되어 지는구나 라고 생각해주시면 되겠습니다!

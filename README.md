@@ -1,5 +1,8 @@
 # spring-aop
-About Spring AOP
+About Spring AOP<br>
+
+간단한 AOP에 대한 설명과 적용시켜보는 예제입니다. 예제는 아주 심플한 계산기 클래스를 준비합니다. 그리고 그 계산이 얼마나 빠른 시간에 이루어졌는지 확인 하는 ApmUtil을 간단히 만들어 어떤 식으로 AOP가 적용되는지 볼 수 있도록 준비 되어 있습니다.
+
 
 # Development Environment<br/>
 Spring simple maven project<br>
@@ -30,24 +33,24 @@ AOP관련 의존성은 다음과 같습니다.<br>
   - Aspectjrt : AspectJ라고 하는 AOP프레임워크를 제공하는 라이브러리.<br>
   - Aspectj Weaver : AspectJ를 활용하기위한 기능을 제공하는 라이브러리.<br>
 <br>
- 이 세개는 Spring에서 활용하는 경우, 세트로 생각해 주시면 됩니다. AspectJ는 Spring Framework가 아니고 Xerox Palo Alto연구소에서 개발되어 지고 있고, 현재는 Eclipse Foundation의 프로젝트로서 개발이 진행되어지고 있는 오픈소스 프레임워크 입니다. 이 AspectJ가 AOP의 구현체라고 보시면 됩니다. 그래서 Spring AOP뿐만 아니라 자바에서의 AOP관련 프레임워크나 라이브러리는 대부분의 것이 AspectJ를 사용하고 있습니다. 즉, 기본적인 Spring AOP의 사용방법으로서 학습을 하지만 그 베이스에는 AspectJ라는 것이 사용되어 지는구나 라고 생각해주시면 되겠습니다
-<br>
+ 이 세개는 Spring에서 활용하는 경우, 세트로 생각해 주시면 됩니다. AspectJ는 Spring Framework가 아니고 Xerox Palo Alto연구소에서 개발되어 지고 있고, 현재는 Eclipse Foundation의 프로젝트로서 개발이 진행되어지고 있는 오픈소스 프레임워크 입니다. 이 AspectJ가 AOP의 구현체라고 보시면 됩니다. 그래서 Spring AOP뿐만 아니라 자바에서의 AOP관련 프레임워크나 라이브러리는 대부분의 것이 AspectJ를 사용하고 있습니다. 즉, 기본적인 Spring AOP의 사용방법으로서 학습을 하지만 그 베이스에는 AspectJ라는 것이 사용되어 지는구나 라고 생각해주시면 되겠습니다.
 
-		<!-- AOP -->
-		<dependency>
-			<groupId>org.springframework</groupId>
-			<artifactId>spring-aop</artifactId>
-			<version>${spring-framework.version}</version>
-		</dependency>
-		<dependency>
-			<groupId>org.aspectj</groupId>
-			<artifactId>aspectjrt</artifactId>
-			<version>${aspectj-version}</version>
-		</dependency>
-		<dependency>
-			<groupId>org.aspectj</groupId>
-			<artifactId>aspectjweaver</artifactId>
-			<version>${aspectj-version}</version>
-		</dependency>
+<br>
+	<!-- AOP -->
+	<dependency>
+		<groupId>org.springframework</groupId>
+		<artifactId>spring-aop</artifactId>
+		<version>${spring-framework.version}</version>
+	</dependency>
+	<dependency>
+		<groupId>org.aspectj</groupId>
+		<artifactId>aspectjrt</artifactId>
+		<version>${aspectj-version}</version>
+	</dependency>
+	<dependency>
+		<groupId>org.aspectj</groupId>
+		<artifactId>aspectjweaver</artifactId>
+		<version>${aspectj-version}</version>
+	</dependency>
 <br>
 
